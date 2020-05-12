@@ -1,2 +1,2 @@
 all:
-	gcc main.c -std=c99 -lm -pthreads
+	gcc main.c -std=c99 -lm -pthread
