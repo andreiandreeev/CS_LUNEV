@@ -71,7 +71,7 @@ int main(int argc, char* argv[])
     pthread_create(&(thread_args_array[i].pthread), NULL, busy_wait, NULL);
 
   }
-  for(int i = 0; i < thread_number; i++)
+  for(int i = 0; i < thread_number; ++i)
   {
     thread_args_array[i].left_end = LEFT_END+(RIGHT_END-LEFT_END)/thread_number*i;
     thread_args_array[i].right_end = LEFT_END+(RIGHT_END-LEFT_END)/thread_number*(i+1);
@@ -86,7 +86,7 @@ int main(int argc, char* argv[])
   }
 
 
-  for (int i = 0; i < thread_number; i++)
+  for (int i = 0; i < thread_number; ++i)
     pthread_join(thread_args_array[i].pthread, NULL);
 
   for (int i = 0; i < thread_number; ++i)
