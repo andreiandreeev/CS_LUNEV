@@ -61,7 +61,7 @@ int main(int argc, char* argv[])
 
   thread_args_t* thread_args_array = (thread_args_t*)calloc(thread_number, sizeof(thread_args_t));
 
-  for(int i = thread_number; i < cpu_number; i++)
+  for(int i = thread_number; i < cpu_number; ++i)
   {
     CPU_ZERO(&cpu_set);
     CPU_SET(i, &cpu_set);
