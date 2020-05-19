@@ -8,8 +8,8 @@
 
 #define FUNCTION(x) sin(x)// e^-x^2
 #define LEFT_END   0
-#define RIGHT_END  31.4
-#define STEP       0.0000001
+#define RIGHT_END  94.2477796
+#define STEP        0.0000001
 
 typedef struct thread_args
 {
